@@ -67,6 +67,42 @@ public class JavaFundamentalsDemo {
                 System.out.println("INVALID DAY");
         }
 
+        String firstName = "Erik";
+        //System.out.println(firstName);
+        String lastName = "Svensson";
+        //System.out.println(firstName + " " + lastName);
+        System.out.println(firstName.toUpperCase());
+
+
+    Person simon = new Person();
+    simon.firstName = "Simon";
+    simon.lastName = "Elbrink";
+    simon.age = 30;
+    simon.hobby = "Programing";
+        System.out.println(simon.getPersonInfo());
+
+    Person person2 = new Person();
+    person2.firstName = "Erik";
+    person2.lastName = "Svensson";
+    person2.age = 49;
+    person2.hobby = "Dancing";
+        System.out.println(person2.getPersonInfo());
+
+        System.out.println(addition(20,5));
+
+
+    }
+
+    public static int addition(int number1, int number2){
+        int result = number1 + number2;
+        return result;
+
+    }
+
+    public static void displayMenu() {
+
+        System.out.println("1. addition");
+        System.out.println("2. substraction");
 
     }
 }
